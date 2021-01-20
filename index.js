@@ -66,7 +66,7 @@ Do the following:
 */
 
 function multiply(a, b){
-    product = a * b;
+    let product = a * b;
     return product
   }
 
@@ -83,7 +83,7 @@ Do the following:
 */
 
 function dogYears(age){
-    dogAge = age * 7;
+    let dogAge = age * 7;
     return dogAge
 }
 
@@ -141,7 +141,7 @@ function hungryDog(lbs, years){
     return (lbs * .04);
   }
 }
-console.log(hungryDog(15, 5));
+
 
 
 
@@ -222,7 +222,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometer){
-  let numOfMiles = kilometer * 0.6214
+  let numOfMiles = kilometer * 0.621371
   
   return numOfMiles;
 }
@@ -239,7 +239,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-  let numOfFeet = cm * 0.032808;
+  let numOfFeet = cm / 30.48;
   
   return numOfFeet;
 }
@@ -262,7 +262,7 @@ function annoyingSong(startNum) {
   let bottlesLeft;
   function numBottles(){
     
-    for (i = startNum; i >= 1; i--) {
+    for (let i = startNum; i >= 1; i--) {
       if (i == 1) {
         bottles = "bottle";
         bottlesLeft = "0 bottles of soda on the wall!";
@@ -313,7 +313,7 @@ function grade(score){
     return 'you got a D'
   }
   if (score < 60){
-    return 'you got a F'
+    return 'you got an F'
   }
 }
 
